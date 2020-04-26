@@ -19,9 +19,14 @@ namespace MetodyAsynchroniczne
             InitializeComponent();
         }
 
-        private void Wykonaj_BTN_Click(object sender, EventArgs e)
+        private async void Wykonaj_BTN_Click(object sender, EventArgs e)
         {
-            Odpal();
+            //Odpal();
+            Stopwatch stoper = new Stopwatch();
+            stoper.Start();
+            await Task.WhenAll(Task1(), Task2(), Task3());
+            stoper.Stop();
+            czasWykonania_TB.Text = stoper.ElapsedMilliseconds.ToString();
         }
 
 
@@ -55,14 +60,14 @@ namespace MetodyAsynchroniczne
             task3_TB.Text = result;
         }
 
-        public async Task Odpal()
+        /*public async Task Odpal()
         {
             Stopwatch stoper = new Stopwatch();
             stoper.Start();
             await Task.WhenAll(Task1() , Task2() , Task3());
             stoper.Stop();
             czasWykonania_TB.Text = stoper.ElapsedMilliseconds.ToString();
-        }
+        }*/
 
         private void wroc_BTN_Click(object sender, EventArgs e)
         {

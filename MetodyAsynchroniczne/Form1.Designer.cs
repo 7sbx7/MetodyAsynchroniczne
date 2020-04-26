@@ -36,11 +36,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.zad4_BTN = new System.Windows.Forms.Button();
             this.wlasna_BTN = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pobierz_BTN
             // 
-            this.pobierz_BTN.Location = new System.Drawing.Point(16, 63);
+            this.pobierz_BTN.Location = new System.Drawing.Point(12, 98);
             this.pobierz_BTN.Name = "pobierz_BTN";
             this.pobierz_BTN.Size = new System.Drawing.Size(75, 23);
             this.pobierz_BTN.TabIndex = 0;
@@ -68,7 +72,7 @@
             "http://basewin.pl/xpklucze.html",
             "https://docs.microsoft.com/pl-pl/dotnet/framework/wpf/controls/how-to-choose-betw" +
                 "een-stackpanel-and-dockpanel"});
-            this.listBox1.Location = new System.Drawing.Point(12, 203);
+            this.listBox1.Location = new System.Drawing.Point(12, 200);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 199);
             this.listBox1.TabIndex = 2;
@@ -76,7 +80,7 @@
             // 
             // Pobierz2_BTN
             // 
-            this.Pobierz2_BTN.Location = new System.Drawing.Point(138, 293);
+            this.Pobierz2_BTN.Location = new System.Drawing.Point(138, 290);
             this.Pobierz2_BTN.Name = "Pobierz2_BTN";
             this.Pobierz2_BTN.Size = new System.Drawing.Size(75, 23);
             this.Pobierz2_BTN.TabIndex = 3;
@@ -86,7 +90,7 @@
             // 
             // link1_TB
             // 
-            this.link1_TB.Location = new System.Drawing.Point(12, 37);
+            this.link1_TB.Location = new System.Drawing.Point(12, 72);
             this.link1_TB.Name = "link1_TB";
             this.link1_TB.Size = new System.Drawing.Size(368, 20);
             this.link1_TB.TabIndex = 4;
@@ -95,7 +99,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 18);
+            this.label1.Location = new System.Drawing.Point(13, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 5;
@@ -104,7 +108,7 @@
             // 
             // zad4_BTN
             // 
-            this.zad4_BTN.Location = new System.Drawing.Point(12, 129);
+            this.zad4_BTN.Location = new System.Drawing.Point(8, 457);
             this.zad4_BTN.Name = "zad4_BTN";
             this.zad4_BTN.Size = new System.Drawing.Size(79, 23);
             this.zad4_BTN.TabIndex = 7;
@@ -114,7 +118,7 @@
             // 
             // wlasna_BTN
             // 
-            this.wlasna_BTN.Location = new System.Drawing.Point(12, 478);
+            this.wlasna_BTN.Location = new System.Drawing.Point(8, 556);
             this.wlasna_BTN.Name = "wlasna_BTN";
             this.wlasna_BTN.Size = new System.Drawing.Size(124, 23);
             this.wlasna_BTN.TabIndex = 8;
@@ -122,11 +126,51 @@
             this.wlasna_BTN.UseVisualStyleBackColor = true;
             this.wlasna_BTN.Click += new System.EventHandler(this.wlasna_BTN_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(278, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Zadanie 1: Aplikacja pobiera asynchronicznie treść strony";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(255, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Zadanie 2: Pobiera asynchronicznie treść wielu stron";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 438);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(205, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Zad 4: Treść ograniczona do 100 znaków";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 531);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(281, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Zadanie 3: Pobieranie treści włączone do własnej metody";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 621);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.wlasna_BTN);
             this.Controls.Add(this.zad4_BTN);
             this.Controls.Add(this.label1);
@@ -152,6 +196,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button zad4_BTN;
         private System.Windows.Forms.Button wlasna_BTN;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
